@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Time of life</string>
+    <string name="tab_text_1">Years</string>
+    <string name="tab_text_2">Months</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="_00">00</string>
+    <string name="_0">0</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="colon">:</string>
+    <string name="hourNumber">12</string>
+    <string name="more_apps">More Apps</string>
+    <string name="resume">Resume</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+    <string name="notify_time">Notify</string>
+    <string name="date_formatDD">DD</string>
+    <string name="date_formatMM">MM</string>
+    <string name="date_formatYY">YY</string>
+    <string name="date_format_sep">/</string>
+    <string name="enter">Enter</string>
+    <string name="_"> </string>
+    <string name="title">title</string>
+    <string name="text">TxT</string>
+</resources>

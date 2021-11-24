@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:id="@+id/TopicPickerLayoutID"
+    android:padding="50dp">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:gravity="center"
+        android:id="@+id/topicPickerEditTextID"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/title"
+        android:autofillHints="@string/title"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        android:background="#0040A1"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:id="@+id/TopicPickerButtonID"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topicPickerEditTextID"/>
+
+</RelativeLayout>

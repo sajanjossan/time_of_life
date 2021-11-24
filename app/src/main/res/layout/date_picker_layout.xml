@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DatePickerLinearLayoutID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dobDD_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autofillHints="@string/_"
+            android:ems="3"
+            android:gravity="center"
+            android:hint="@string/date_formatDD"
+            android:inputType="date"
+            android:singleLine="true"
+            android:textColorHint="#C1C1C1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/date_format_sep"
+            android:textColor="#C1C1C1" />
+
+        <EditText
+            android:id="@+id/dobMM_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autofillHints="@string/_"
+            android:ems="3"
+            android:gravity="center"
+            android:hint="@string/date_formatMM"
+            android:inputType="date"
+            android:singleLine="true"
+            android:textColorHint="#C1C1C1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/date_format_sep"
+            android:textColor="#C1C1C1" />
+
+        <EditText
+            android:id="@+id/dobYY_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autofillHints="@string/_"
+            android:ems="3"
+            android:gravity="center"
+            android:hint="@string/date_formatYY"
+            android:inputType="date"
+            android:singleLine="true"
+            android:textColorHint="#C1C1C1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enterBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="@string/enter" />
+
+</LinearLayout>
