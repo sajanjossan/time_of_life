@@ -37,6 +37,8 @@ class PlaceholderFragment(context: Context) : Fragment() {
         val titlePickerLayout = root.findViewById<RelativeLayout>(R.id.TopicPickerLayoutID)
         val titleEnterEditText: EditText = root.findViewById(R.id.topicPickerEditTextID)
         val titleEnterButton: Button = root.findViewById(R.id.TopicPickerButtonID)
+        val rowTextView: TextView = root.findViewById(R.id.rowTextViewID)
+        val columnTextView: TextView = root.findViewById(R.id.columnTextViewID)
 
         val topicTextView: TextView = root.findViewById(R.id.TopicTextViewID)
         val imageView: ImageView = root.findViewById(R.id.ImageViewerID)
@@ -73,6 +75,7 @@ class PlaceholderFragment(context: Context) : Fragment() {
                     saveString("TitleStringMonths",inputTitleText)
                 }
             }
+
             titlePickerLayout.visibility = View.GONE
         }
 
@@ -86,7 +89,6 @@ class PlaceholderFragment(context: Context) : Fragment() {
             }
             false
         }
-
 //        pageViewModel.text.observe(viewLifecycleOwner, Observer<String> {
 //            textView.text = it
 //        })
@@ -98,6 +100,8 @@ class PlaceholderFragment(context: Context) : Fragment() {
                 }else{
                     topicTextView.text = getString("TitleStringYears")
                 }
+                rowTextView.visibility = View.GONE
+                columnTextView.visibility = View.GONE
                 imageView.setImageResource(yearsArray[yearsIndex])
             } else {
                 if (getString("TitleStringMonths") == "") {
@@ -105,6 +109,13 @@ class PlaceholderFragment(context: Context) : Fragment() {
                 }else{
                     topicTextView.text = getString("TitleStringMonths")
                 }
+                //rows and columns
+                rowTextView.visibility = View.VISIBLE
+                columnTextView.visibility = View.VISIBLE
+                rowTextView.text = ((monthsIndex+1) / 36).toString()
+                val rows =(monthsIndex+1) / 36
+                columnTextView.text =   ((monthsIndex+1) - (rows * 36)).toString()
+
                 imageView.setImageResource(monthsArray[monthsIndex])
             }
         } catch (e: Exception) {
